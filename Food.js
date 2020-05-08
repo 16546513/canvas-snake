@@ -20,7 +20,7 @@ class Food {
   }
 
   _random(x) {
-    return Math.random() * x - this.d
+    return Math.max(Math.random() * x - this.d, 0)
   }
 
   render() {
